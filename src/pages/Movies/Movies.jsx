@@ -57,7 +57,7 @@ export default function Movies() {
 
           <SearchInput
             onChange={handleNameChange}
-            value={moviesName}
+            value={query}
             type="text"
             autoComplete="off"
             autoFocus
