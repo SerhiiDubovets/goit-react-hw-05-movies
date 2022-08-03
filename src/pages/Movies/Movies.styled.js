@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import svg from '../../components/images/loupe.png';
+import svg from '../../images/loupe.png';
 
 export const Header = styled.header`
   top: 0;

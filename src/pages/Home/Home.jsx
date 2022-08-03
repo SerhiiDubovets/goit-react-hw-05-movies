@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getTrending } from 'components/Services/Api';
+import { getTrending } from '../../Services/Api';
 import MoviesList from 'components/MoviesList';
 
 export default function Home() {

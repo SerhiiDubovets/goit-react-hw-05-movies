@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Outlet, useParams } from 'react-router-dom';
-import { getMovieCredits } from 'components/Services/Api';
-import img from '../images/siluet_4108.jpg';
+import { getMovieCredits } from '../../Services/Api';
+import img from '../../images/siluet_4108.jpg';
 import { ListActors } from './Cast.styled.js';
 
 export default function Cast() {

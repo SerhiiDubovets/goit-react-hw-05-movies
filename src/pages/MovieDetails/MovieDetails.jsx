@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, Outlet, useParams, useLocation } from 'react-router-dom';
-import { getMovieDetails } from 'components/Services/Api';
+import { getMovieDetails } from '../../Services/Api';
 import {
   BlockDetails,
   BlockInfo,
@@ -62,8 +62,12 @@ export default function MovieDetails() {
         </BlockDetails>
       )}
       <BlocLinks>
-        <Links to={'cast'}>Cast</Links>
-        <Links to={'reviews'}>Reviews</Links>
+        <Links to="cast" state={{ from: back }}>
+          Cast
+        </Links>
+        <Links to="reviews" state={{ from: back }}>
+          Reviews
+        </Links>
       </BlocLinks>
       <Outlet />
     </>

@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet, useSearchParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getSearch } from 'components/Services/Api';
+import { getSearch } from '../../Services/Api';
 
 import {
   Header,
@@ -45,7 +45,6 @@ export default function Movies() {
       alert('Введите название поиска');
       return;
     }
-    setMoviesName('');
   };
 
   return (

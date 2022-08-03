@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet, useParams } from 'react-router-dom';
-import { getMovieReviews } from 'components/Services/Api';
+import { getMovieReviews } from '../../Services/Api';
 
 export default function Reviews() {
   const { moviesId } = useParams();

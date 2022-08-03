@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const MoviesItem = ({ id, title }) => {
   const location = useLocation();
+
   return (
     <li>
       <Link to={`/movies/${id}`} state={{ from: location }} id={id}>
