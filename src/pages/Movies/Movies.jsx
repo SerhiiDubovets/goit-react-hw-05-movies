@@ -14,9 +14,9 @@ import MoviesList from 'components/MoviesList';
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
-  const [moviesName, setMoviesName] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') || '';
+  const [moviesName, setMoviesName] = useState(query);
 
   useEffect(() => {
     if (query === '') {
@@ -57,7 +57,7 @@ export default function Movies() {
 
           <SearchInput
             onChange={handleNameChange}
-            value={query}
+            value={moviesName}
             type="text"
             autoComplete="off"
             autoFocus
